@@ -224,12 +224,17 @@ top: 0;
 }
 
 .header__text-link {
-    align-self: flex-start;
+    align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 4px;
     color: var(--secondary-color);
-    border-bottom: 1px dotted var(--secondary-color);
+    --link-arrow: var(--secondary-color);
+}
+
+.header__text-link span {
+    text-decoration: dotted underline;
+
 }
 
 .header__text-link.green {
