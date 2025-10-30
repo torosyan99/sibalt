@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+	<link rel="stylesheet" type="text/css" href="css/pages/homepage.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/calendar/calendar.min.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slim-select/slim-select.min.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/swiper/swiper.min.css"/>
+
+	<script src="libs/slim-select/slim-select.min.js" defer></script>
+	<script src="libs/calendar/calendar.min.js" defer></script>
+	<script src="libs/swiper/swiper.min.js" defer></script>
+	<script src="js/main.js" defer></script>
+	<script src="js/pages/homepage.js" defer></script>
+
+	<title>Document</title>
+</head>
+<body>
+
+<header class="header">
+	<div class="header__top container">
+		<a class="header__logo" href="#">
+			<picture>
+				<source srcset="assets/images/main-logo-mobile.png" media="(max-width: 768px)"/>
+				<img class="header__logo-img" alt="logo" src="assets/images/main-logo.png"/>
+			</picture>
+		</a>
+		<a class="header__link-m" href="#">
+			<img src="assets/images/phone-mobile.png" alt="phone"/>
+		</a>
+		<button class="header__menu-button">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<div class="header__info">
+			<div class="header__wrapper">
+				<a class="header__link" href="tel:+73832990403">
+					<span>+7 (383) <b>299-04-03</b></span>
+					<svg class="header__icon" width="18" height="18">
+						<use xlink:href="assets/images/icons.svg#phone"></use>
+					</svg>
+				</a>
+				<a class="header__link" href="tel:+73832211898">
+					+7 (383) <b>221-18-98</b>
+				</a>
+			</div>
+			<div class="header__wrapper">
+				<button class="header__text-link">
+					Заказать обратный звонок
+				</button>
+				<a class="header__text-link green" href="#">
+					Написать на WhatsApp
+				</a>
+			</div>
+			<div class="header__wrapper">
+				<a class="header__link" href="tel:+73832990403">
+					+7 (383) <b>299-04-03</b>
+					<span class="header__bottom-value">для экстренной связи</span>
+					<svg class="footer__icon" width="24" height="24">
+						<use xlink:href="assets/images/icons.svg#alarm"></use>
+					</svg>
+				</a>
+				<a class="header__text-link" href="#">
+					Все контакты
+				</a>
+			</div>
+
+
+		</div>
+
+		<div class="header__menu">
+			<ul class="header__list">
+				<li class="header__item">
+					<a class="header__item-link" href="#">
+						Направления
+					</a>
+				</li>
+				<li class="header__item">
+					<a class="header__item-link" href="#">
+						Спецпредложения
+					</a>
+				</li>
+				<li class="header__item">
+					<a class="header__item-link" href="#">
+						Как купить
+					</a>
+				</li>
+				<li class="header__item">
+					<a class="header__item-link" href="#">
+						Бронирование
+					</a>
+				</li>
+				<li class="header__item">
+					<a class="header__item-link" href="#">
+						Оплатит по ID
+					</a>
+				</li>
+				<li class="header__item">
+					<a class="header__item-link" href="#">
+						Агенствам
+					</a>
+				</li>
+
+
+			</ul>
+		</div>
+
+	</div>
+</header>
+
+<main class="main">
+	<div class="searching">
+		<div class="container-2">
+			<div class="searching__box">
+				<form class="searching__form">
+					<div class="searching__form-top">
+						<div class="searching__item w-180">
+							<label class="searching__item-name" for="region">Регион</label>
+							<select class="select" name="region" id="region">
+								<option value="Горный алтай" selected>Горный алтай</option>
+								<option value="Горная Шория">Горная Шория</option>
+								<option value="Яровое">Яровое</option>
+								<option value="НСО">НСО</option>
+								<option value="Россия экскурсионная">Россия экскурсионная</option>
+							</select>
+						</div>
+						<div class="searching__item w-180">
+							<label class="searching__item-name" for="relax-type">Тип отдыха</label>
+							<select class="select searching__select" id="relax-type" name="relax-type">
+								<option value="Отдых" selected>Отдых</option>
+							</select>
+						</div>
+						<div class="searching__item w-230">
+							<label class="searching__item-name" for="places">Место отдыха</label>
+							<select class="select" name="places" id="places">
+								<option value="Все" selected>Все</option>
+								<option value="Озеро Ая">Озеро Ая</option>
+								<option value="Бирузовая Катунь">Бирузовая Катунь</option>
+								<option value="Чемаль">Чемаль</option>
+							</select>
+						</div>
+						<div class="searching__item w-230">
+							<label class="searching__item-name" for="route">Гостиница/Маршрут</label>
+							<select class="select search" id="route" name="route">
+								<option value="Все" selected>Все</option>
+								<option value="10 Богов">10 Богов</option>
+								<option value="Бирузовая Катунь">Бирузовая Катунь</option>
+								<option value="Чемаль">Гостиница/Маршрут</option>
+							</select>
+						</div>
+						<div class="searching__items">
+							<div class="searching__item w-115">
+								<label class="searching__item-name" for="date-start">Дата заезда</label>
+								<div class="date__wrapper">
+									<input type="text" class="input" name="data-start" id="date-start">
+								</div>
+
+							</div>
+							<div class="searching__item w-115">
+								<label class="searching__item-name" for="data-end">Дата выезда</label>
+								<div class="date__wrapper">
+									<input type="text" class="input" name="data-end" id="date-end">
+								</div>
+							</div>
+						</div>
+						<div class="searching__items">
+							<div class="searching__item w-65">
+								<label class="searching__item-name" for="adults">Взрослых</label>
+								<select class="select search" name="adults" id="adults">
+									<option value="1">1</option>
+									<option value="2" selected>2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+							<div class="searching__item w-65">
+								<label class="searching__item-name" for="children">Детей</label>
+								<select class="select search" name="children" id="children">
+									<option value="0" selected>0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+						<div class="searching__item">
+							<p>Цена за 1 сутки</p>
+							<div class="searching__range">
+								<div class="searching__range-inputs">
+									<input class="input min-val" type="number" value="1">
+									<span>-</span>
+									<input class="input max-val" type="number" value="99000">
+								</div>
+								<div>
+									<div class="searching__range-slider">
+										<div class="searching__range-progress"></div>
+										<input type="range" class="range-min" min="1" max="99000" value="1">
+										<input type="range" class="range-max" min="1" max="99000" value="99000">
+									</div>
+									<div class="searching__range-bottom">
+										<span>от 1</span>
+										<span>до 99 000</span>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="searching__form-bottom">
+						<div class="searching__details">
+							<div class="searching__details-item">
+								<p>В номер</p>
+								<select class="select detail"
+								        data-placeholder="Выберите одно или несколько значений из списка" multiple
+								        name="region">
+									<option value="Горный алтай">Горный алтай</option>
+									<option value="Горная Шория">Горная Шория</option>
+									<option value="Яровое">Яровое</option>
+									<option value="НСО">НСО</option>
+									<option value="Россия экскурсионная">Россия экскурсионная</option>
+								</select>
+							</div>
+							<div class="searching__details-item">
+								<p>Инфраструктура</p>
+								<select class="select detail"
+								        data-placeholder="Выберите одно или несколько значений из списка" multiple
+								        name="region">
+									<option value="Горный алтай">Горный алтай</option>
+									<option value="Горная Шория">Горная Шория</option>
+									<option value="Яровое">Яровое</option>
+									<option value="НСО">НСО</option>
+									<option value="Россия экскурсионная">Россия экскурсионная</option>
+								</select>
+							</div>
+							<div class="searching__details-item">
+								<p>Номер</p>
+								<select class="select detail"
+								        data-placeholder="Выберите одно или несколько значений из списка" multiple
+								        name="region">
+									<option value="Горный алтай">Горный алтай</option>
+									<option value="Горная Шория">Горная Шория</option>
+									<option value="Яровое">Яровое</option>
+									<option value="НСО">НСО</option>
+									<option value="Россия экскурсионная">Россия экскурсионная</option>
+								</select>
+							</div>
+							<div class="searching__details-item">
+								<p>Отдых с детьми</p>
+								<select class="select detail"
+								        data-placeholder="Выберите одно или несколько значений из списка" multiple
+								        name="region">
+									<option value="Горный алтай">Горный алтай</option>
+									<option value="Горная Шория">Горная Шория</option>
+									<option value="Яровое">Яровое</option>
+									<option value="НСО">НСО</option>
+									<option value="Россия экскурсионная">Россия экскурсионная</option>
+								</select>
+							</div>
+							<div class="searching__details-item">
+								<p>Прочее</p>
+								<select class="select detail"
+								        data-placeholder="Выберите одно или несколько значений из списка" multiple
+								        name="region">
+									<option value="Горный алтай">Горный алтай</option>
+									<option value="Горная Шория">Горная Шория</option>
+									<option value="Яровое">Яровое</option>
+									<option value="НСО">НСО</option>
+									<option value="Россия экскурсионная">Россия экскурсионная</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="searching__flex">
+							<button class="searching__details-button" type="button">
+								<span>	Подробный поиск </span>
+								<span class="open-value">Свернуть</span>
+							</button>
+							<button class="button" type="submit">
+								Найти
+							</button>
+
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<section class="special-offers">
+		<div class="container-2">
+			<div class="box">
+				<h3 class="box__title">Спецпредложения</h3>
+				<div class="special-offers__content">
+					<a class="special-offers__item" href="#">
+						<img class="special-offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="special-offers__name">
+							Новый год 2026
+						</p>
+					</a>
+					<a class="special-offers__item" href="#">
+						<img class="special-offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="special-offers__name">
+							Для лыжников и <br/> сноубордистов
+						</p>
+					</a>
+					<a class="special-offers__item" href="#">
+						<img class="special-offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="special-offers__name">
+							Корпоративный отдых
+						</p>
+					</a>
+					<a class="special-offers__item" href="#">
+						<img class="special-offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="special-offers__name">
+							Рекомендуемые базы
+						</p>
+					</a>
+					<a class="special-offers__item" href="#">
+						<img class="special-offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="special-offers__name">
+							Акции
+						</p>
+					</a>
+
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="offers">
+		<div class="container-2">
+			<div class="box">
+				<h3 class="box__title">Горный Алтай</h3>
+				<div class="offers__content">
+					<a class="offers__item" href="#">
+						<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="offers__name">
+							База отдыха Алтая
+						</p>
+						<ul class="offers__list">
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Бирюзовая Катунь</li>
+							<li class="offers__list-item">Усть-Муны Рублевка</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+						</ul>
+					</a>
+					<a class="offers__item" href="#">
+						<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="offers__name">
+							База отдыха Алтая
+						</p>
+						<ul class="offers__list">
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Бирюзовая Катунь</li>
+							<li class="offers__list-item">Усть-Муны Рублевка</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+						</ul>
+					</a>
+					<a class="offers__item" href="#">
+						<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="offers__name">
+							База отдыха Алтая
+						</p>
+						<ul class="offers__list">
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Бирюзовая Катунь</li>
+							<li class="offers__list-item">Усть-Муны Рублевка</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+						</ul>
+					</a>
+					<a class="offers__item" href="#">
+						<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+						<p class="offers__name">
+							База отдыха Алтая
+						</p>
+						<ul class="offers__list">
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Бирюзовая Катунь</li>
+							<li class="offers__list-item">Усть-Муны Рублевка</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+							<li class="offers__list-item">Озеро Ая Манжерок</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<div class="offers__bottom">
+				<div class="box">
+					<h3 class="box__title">Горная Шория</h3>
+					<div class="offers__content">
+						<a class="offers__item" href="#">
+							<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+							<p class="offers__name">
+								База отдыха Алтая
+							</p>
+							<ul class="offers__list">
+								<li class="offers__list-item">Озеро Ая Манжерок</li>
+								<li class="offers__list-item">Бирюзовая Катунь</li>
+							</ul>
+						</a>
+						<a class="offers__item" href="#">
+							<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+							<p class="offers__name">
+								База отдыха Алтая
+							</p>
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<h3 class="box__title">Экскурсия из Новосибирска</h3>
+					<div class="offers__content">
+						<a class="offers__item" href="#">
+							<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+							<p class="offers__name">
+								База отдыха Алтая
+							</p>
+							<ul class="offers__list">
+								<li class="offers__list-item">Озеро Ая Манжерок</li>
+								<li class="offers__list-item">Бирюзовая Катунь</li>
+							</ul>
+						</a>
+						<a class="offers__item" href="#">
+							<img class="offers__img" src="assets/images/image.jpg" alt="image"/>
+							<p class="offers__name">
+								База отдыха Алтая
+							</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="others">
+		<div class="container-2">
+			<div class="box">
+				<h3 class="box__title">Другие направления</h3>
+				<div class="others__content">
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+					<a class="others__item" href="#">
+						<p class="others__name">
+							Белокуриха
+						</p>
+						<img class="others__img" src="assets/images/image.jpg" alt="image"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="popular">
+		<div class="container-2">
+			<div class="box">
+				<h3 class="box__title">Популярное</h3>
+				<div class="popular__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a class="popular__link" href="#">
+								<img class="popular__img" src="assets/images/image.jpg" alt="popular"/>
+								<p class="popular__name">Etnica</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a class="popular__link" href="#">
+								<img class="popular__img" src="assets/images/image.jpg" alt="popular"/>
+								<p class="popular__name">Etnica</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a class="popular__link" href="#">
+								<img class="popular__img" src="assets/images/image.jpg" alt="popular"/>
+								<p class="popular__name">Etnica</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a class="popular__link" href="#">
+								<img class="popular__img" src="assets/images/image.jpg" alt="popular"/>
+								<p class="popular__name">Etnica</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a class="popular__link" href="#">
+								<img class="popular__img" src="assets/images/image.jpg" alt="popular"/>
+								<p class="popular__name">Etnica</p>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a class="popular__link" href="#">
+								<img class="popular__img" src="assets/images/image.jpg" alt="popular"/>
+								<p class="popular__name">Etnica</p>
+							</a>
+						</div>
+					</div>
+					<div class="popular__slider-bottom">
+						<button class="popular__button popular__prev">
+							<svg width="15" height="15">
+								<use xlink:href="assets/images/icons.svg#arrow-left"></use>
+							</svg>
+						</button>
+						<div class="swiper-pagination popular__pagination"></div>
+						<button class="popular__button popular__next">
+							<svg width="15" height="15">
+								<use xlink:href="assets/images/icons.svg#arrow-right"></use>
+							</svg>
+						</button>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="news">
+		<div class="container-2">
+			<div class="box">
+				<div class="news__top">
+					<h3 class="news__title">
+						Новости
+					</h3>
+					<a class="link" href="#">
+						<span>Все новости</span>
+						<svg width="12" height="12">
+							<use xlink:href="assets/images/icons.svg#arrow-link"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="news__content">
+					<div class="news__item">
+						<img class="news__img" src="assets/images/image.jpg" alt="image"/>
+						<div class="news__item-wrapper">
+							<div class="news__date">
+								<img class="news__date-icon" src="assets/images/calendar.svg" alt="calendar"/>
+								<span>24 сентября 2025</span>
+							</div>
+							<p class="news__name">
+								<span class="news__name-value"> С наступающим днем туризма!!! </span>
+							</p>
+							<a class="news__link">
+								<span class="news__link-value">Читать полностью</span>
+								<svg width="12" height="12">
+									<use xlink:href="assets/images/icons.svg#arrow-link"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="news__item">
+						<img class="news__img" src="assets/images/image.jpg" alt="image"/>
+						<div class="news__item-wrapper">
+							<div class="news__date">
+								<img class="news__date-icon" src="assets/images/calendar.svg" alt="calendar"/>
+								<span>24 сентября 2025</span>
+							</div>
+							<p class="news__name">
+								<span class="news__name-value"> С наступающим днем туризма!!! </span>
+								<span class="news__name-date">в августе 2025</span>
+							</p>
+							<a class="news__link">
+								<span class="news__link-value">Читать полностью</span>
+								<svg width="12" height="12">
+									<use xlink:href="assets/images/icons.svg#arrow-link"></use>
+								</svg>
+							</a>
+
+						</div>
+					</div>
+					<div class="news__item">
+						<img class="news__img" src="assets/images/image.jpg" alt="image"/>
+						<div class="news__item-wrapper">
+
+							<div class="news__date">
+								<img class="news__date-icon" src="assets/images/calendar.svg" alt="calendar"/>
+								<span>24 сентября 2025</span>
+							</div>
+							<p class="news__name">
+								<span class="news__name-value"> Работа офиса </span>
+								<span class="news__name-date">в августе 2025</span>
+							</p>
+							<a class="news__link">
+								<span class="news__link-value">Читать полностью</span>
+								<svg width="12" height="12">
+									<use xlink:href="assets/images/icons.svg#arrow-link"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="news__item">
+						<img class="news__img" src="assets/images/image.jpg" alt="image"/>
+						<div class="news__item-wrapper">
+
+							<div class="news__date">
+								<img class="news__date-icon" src="assets/images/calendar.svg" alt="calendar"/>
+								<span>24 сентября 2025</span>
+							</div>
+							<p class="news__name">
+								<span class="news__name-value"> С наступающим днем туризма!!! </span>
+								<span class="news__name-date">в августе 2025</span>
+							</p>
+							<a class="news__link">
+								<span class="news__link-value">Читать полностью</span>
+								<svg width="12" height="12">
+									<use xlink:href="assets/images/icons.svg#arrow-link"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="news__item">
+						<img class="news__img" src="assets/images/image.jpg" alt="image"/>
+						<div class="news__item-wrapper">
+
+							<div class="news__date">
+								<img class="news__date-icon" src="assets/images/calendar.svg" alt="calendar"/>
+								<span>24 сентября 2025</span>
+							</div>
+							<p class="news__name">
+								<span class="news__name-value"> С наступающим днем туризма!!! </span>
+								<span class="news__name-date">в августе 2025</span>
+							</p>
+							<a class="news__link">
+								<span class="news__link-value">Читать полностью</span>
+								<svg width="12" height="12">
+									<use xlink:href="assets/images/icons.svg#arrow-link"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container-2">
+			<div class="box">
+				<h3>Почему вибырают нас</h3>
+			</div>
+
+		</div>
+		<div class="about__content">
+			<div class="container">
+				<div class="about__grid">
+					<div class="about__item">
+						<img class="about__icon" src="assets/images/about-1.png" alt="compass"/>
+						<p class="about__name">Опыт и надежность</p>
+						<p class="about__text">30 лет работаем, чтобы вы отдыхали — за эти годы нашими клиентами стали
+							более 200 тысяч человек со всех уголков России. Наши менеджеры лично посещают отели и
+							курорты, чтобы предложить вам только проверенные варианты.
+						</p>
+					</div>
+					<div class="about__item">
+						<img class="about__icon" src="assets/images/about-2.png" alt="lock "/>
+						<p class="about__name">Безопасность и гарантии</p>
+						<p class="about__text">
+							Состоим в Едином реестре туроператоров и все туристы защищены финансовой гарантией. Являемся
+							членами ассоциации тур.организаций и работаем только с проверенными партнёрами по всей
+							России.
+						</p>
+					</div>
+					<div class="about__item">
+						<img class="about__icon" src="assets/images/about-3.png" alt="%"/>
+						<p class="about__name">Цена и выгода</p>
+						<p class="about__text">
+							Прямые контракты по единой цене с отелями. При онлайн оплате комиссию берём на себя.
+							Действует бонусная программа и акции. Являемся участником программы "РОСПРОФЖЕЛ" и
+							"Профсоюзный дисконт". Скидки для пенсионеров. Скидки для групп и корпоративных клиентов.
+						</p>
+					</div>
+					<div class="about__item">
+						<img class="about__icon" src="assets/images/about-1.png" alt="settings"/>
+						<p class="about__name">Технологии</p>
+						<p class="about__text">
+							Удобное онлайн-оформление, оплата тура и получение документов не выходя из дома. Собственная
+							система бронирования. Каждый сезон интересные новинки, совершенствование уже проверенных
+							туров.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="container-2">
+			<div class="box">
+				<h3>Отзывы</h3>
+			</div>
+
+		</div>
+		<div class="reviews__content">
+			<div class="container">
+				<div class="reviews__grid">
+					<div class="reviews__item">
+						<img class="reviews__icon" src="assets/images/reviews-1.png" alt="review-image"/>
+						<img class="reviews__start" src="assets/images/stars.png" alt="stars"/>
+						<div class="reviews__flex">
+							<p class="reviews__author">Наталья</p>
+							<p class="reviews__date">08.08.2009</p>
+						</div>
+						<p class="reviews__text">
+							Сибирь-Алтай — МОЛОДЦЫ!!!! Спасибо огромное за прекрасно организованный отдых!
+							Отдельное спасибо сопровождающей Евгении, водителям автобусов.
+							Отдыхала на озере Ая, очень довольна!
+							Если ехать на Алтай, то только с Вами!!! </p>
+					</div>
+					<div class="reviews__item">
+						<img class="reviews__icon" src="assets/images/reviews-2.png" alt="review-image"/>
+						<img class="reviews__start" src="assets/images/stars.png" alt="stars"/>
+						<div class="reviews__flex">
+							<p class="reviews__author">Елена</p>
+							<p class="reviews__date">28.08.2010</p>
+						</div>
+						<p class="reviews__text">
+							Хочу сказать спасибо за мой великолепно проведённый отпуск!
+							В активный тур я пошла впервые, переживала, т.к. ехала одна и до последнего не набиралась
+							группа.
+							В итоге нас было 15 человек, плюс три замечательных инструктора, которые заботились о нас
+							весь маршрут.
+							Удачи вашей фирме. Люди, ходите на активные маршруты! </p>
+					</div>
+					<div class="reviews__item">
+						<img class="reviews__icon" src="assets/images/reviews-3.png" alt="review-image"/>
+						<img class="reviews__start" src="assets/images/stars.png" alt="stars"/>
+						<div class="reviews__flex">
+							<p class="reviews__author">Алёна</p>
+							<p class="reviews__date">20.07.2011</p>
+						</div>
+						<p class="reviews__text">
+							Ну вот мы и вернулись с Алтая!
+							Впечатлений, как всегда, масса!
+							Хочется поблагодарить Вас за прекрасный отдых и за внимание!
+							Было очень приятно, как только сели в автобус — получить подарок к нашему с мужем
+							юбилею!!!!!
+							СПАСИБО!!!!! Уже с нетерпением ждём следующего лета!
+							Браво Сибирь-Алтай! Браво Алтай! Всё, как всегда, было на высшем уровне!!!
+							Ваши постоянные и преданные клиенты, семья Черновых. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<footer class="footer">
+	<div class="footer__content">
+		<div class="container footer__inner">
+			<div class="footer__left">
+				<p class="footer__rights">&copy; 2001-2025 Сибирь-Алтай</p>
+				<div class="footer__socials">
+					<a class="footer__social">
+						<svg width="32" height="32">
+							<use xlink:href="assets/images/icons.svg#vk"></use>
+						</svg>
+					</a>
+					<a class="footer__social">
+						<svg width="32" height="32">
+							<use xlink:href="assets/images/icons.svg#ok"></use>
+						</svg>
+					</a>
+					<a class="footer__social">
+						<svg width="32" height="32">
+							<use xlink:href="assets/images/icons.svg#tg"></use>
+						</svg>
+					</a>
+				</div>
+				<p class="footer__creator">
+					Создание сайта - <span>ITB-Company</span>
+				</p>
+			</div>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a class="footer__link" href="#">О компании</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Контакты</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Как купить</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Спецпредложение</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Бронирование</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Агенствам</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Новости</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Наши партнеры</a>
+				</li>
+			</ul>
+			<div class="footer__contacts">
+				<a class="footer__link" href="tel:+79232452717">
+					<svg class="footer__icon" width="18" height="18">
+						<use xlink:href="assets/images/icons.svg#phone"></use>
+					</svg>
+					+7 (923) <span>245-27-17</span>
+				</a>
+				<a class="footer__link" href="tel:+79139170403">+7 (913) <span>917-04-03</span></a>
+				<a class="footer__link" href="tel:+73832990403">+7 (383) <span>299-04-03</span></a>
+				<a class="footer__link" href="tel:+73832211898">+7 (383) <span>221-18-98</span></a>
+				<a class="footer__link" href="#">Написать на WhatsApp</a>
+				<button class="footer__link">Заказать на обратный звонок</button>
+			</div>
+			<div class="footer__wrapper">
+				<a class="footer__link" href="tel:+79232452717">
+					+7 (923) <span>245-27-17</span>
+					<svg class="footer__icon" width="24" height="24">
+						<use xlink:href="assets/images/icons.svg#alarm"></use>
+					</svg>
+					<span class="footer__bottom-value">Линния экстренной связи</span>
+				</a>
+				<br/>
+				<a class="footer__link" href="mailto:sibalt@mail.ru">
+					sibalt2000@mail.ru
+					<svg class="footer__icon" width="20" height="20">
+						<use xlink:href="assets/images/icons.svg#mail"></use>
+					</svg>
+				</a>
+
+
+				<button class="footer__button-up">
+					<svg width="40" height="40">
+						<use xlink:href="assets/images/icons.svg#top-circle"></use>
+					</svg>
+					<span>Наверх</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<ul class="footer__bottom-list container">
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Горный Алтай</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Горная Шория</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Белокуриха</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Яровое</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Черное море</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Отдых в России</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Байкал</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Санкт-Петербург</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Москва</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Казань</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Екатеринбург</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Красноярск</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Новосибирск и НСО</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Тобольск и Тюмень</a></li>
+			<li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Европейская часть <br/> России</a>
+			</li>
+
+		</ul>
+	</div>
+</footer>
+
+</body>
+</html>
